@@ -17,12 +17,6 @@ public class MainActivity extends AppCompatActivity {
         goToActivity(s);
     }
 
-    public void clickFunctionminus(View view){
-        EditText input1 = (EditText) findViewById(R.id.myTextField1);
-        EditText input2 = (EditText) findViewById(R.id.myTextField2);
-        //s = Float.parseFloat(input1.toString()) - Float.parseFloat(input2.toString());
-        goToActivity(s);
-    }
 
     public void goToActivity(String s){
         Intent intent = new Intent(this, cal.class);
