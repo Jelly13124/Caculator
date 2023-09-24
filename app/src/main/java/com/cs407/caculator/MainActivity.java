@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         EditText input2 = (EditText) findViewById(R.id.myTextField2);
         float answer = Float.parseFloat(input1.getText().toString()) / Float.parseFloat(input2.getText().toString());
         s = Float.toString(answer);
+        if(Float.parseFloat(input2.getText().toString()) == 0) {
+            s = "Can not divide by 0";
+        }
         goToActivity(s);
     }
 
