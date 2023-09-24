@@ -13,7 +13,32 @@ public class MainActivity extends AppCompatActivity {
     public void clickFunctionplus(View view){
         EditText input1 = (EditText) findViewById(R.id.myTextField1);
         EditText input2 = (EditText) findViewById(R.id.myTextField2);
-        s = input1.toString() + input2.toString();
+        float answer = Float.parseFloat(input1.getText().toString()) + Float.parseFloat(input2.getText().toString());
+        s = Float.toString(answer);
+        goToActivity(s);
+    }
+
+    public void clickFunctionminus(View view){
+        EditText input1 = (EditText) findViewById(R.id.myTextField1);
+        EditText input2 = (EditText) findViewById(R.id.myTextField2);
+        float answer = Float.parseFloat(input1.getText().toString()) - Float.parseFloat(input2.getText().toString());
+        s = Float.toString(answer);
+        goToActivity(s);
+    }
+
+    public void clickFunctionmulti(View view){
+        EditText input1 = (EditText) findViewById(R.id.myTextField1);
+        EditText input2 = (EditText) findViewById(R.id.myTextField2);
+        float answer = Float.parseFloat(input1.getText().toString()) * Float.parseFloat(input2.getText().toString());
+        s = Float.toString(answer);
+        goToActivity(s);
+    }
+
+    public void clickFunctiondivi(View view){
+        EditText input1 = (EditText) findViewById(R.id.myTextField1);
+        EditText input2 = (EditText) findViewById(R.id.myTextField2);
+        float answer = Float.parseFloat(input1.getText().toString()) / Float.parseFloat(input2.getText().toString());
+        s = Float.toString(answer);
         goToActivity(s);
     }
 
